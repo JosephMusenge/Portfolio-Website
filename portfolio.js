@@ -35,7 +35,12 @@ window.addEventListener("scroll", function() {
         navbar.classList.remove("fixed-nav");
     }
 
-    
+    // Add back to top button
+    if (scrollHeight > 500) {
+        topLink.classList.add("show-link");
+    } else {
+        topLink.classList.remove("show-link");
+    }
 })
 // ********** smooth scroll ************
 // select links
