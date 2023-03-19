@@ -216,9 +216,6 @@ nav {
   .fixed-nav .links a:hover {
     color: var(--clr-primary-5);
   }
-  /* .fixed-nav .links-container {
-    height: auto !important;
-  } */
   .nav-header {
     display: flex;
     align-items: center;
@@ -331,6 +328,10 @@ header {
     }
   }
   /* sections and title */
+  .title {
+    padding: 3rem 2rem;
+  }
+
   .title h2 {
     text-align: center;
     text-transform: uppercase;
@@ -339,7 +340,7 @@ header {
     color: var(--clr-primary-5);
   }
   #about,
-  #projects,
+  /*#projects,*/
   #certifications,
   #contact {
     height: 80vh;
@@ -348,6 +349,7 @@ header {
   #contact {
     background: var(--clr-white);
   }
+  /* FOOTER */
   footer {
     background: var(--clr-grey-1);
     padding: 5rem 1rem;
@@ -373,7 +375,6 @@ header {
     border-radius: var(--radius);
     color: var(--clr-white);
     animation: bounce 2s ease-in-out infinite;
-  
     visibility: hidden;
     z-index: -100;
   }
@@ -414,12 +415,11 @@ header {
 
 @media (max-width: 30.625em) {
   .projects-section {
-    padding: 6rem 1rem;
+    padding: 4rem 2rem;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
-    width: 70%;
   }
 }
 
@@ -440,7 +440,7 @@ header {
 }
 
 .project i {
-  padding: 1em 0 1em;
+  padding: 0.5em 0 1em;
   font-size: 2em;
 }
 
