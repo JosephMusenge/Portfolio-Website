@@ -456,3 +456,30 @@ header {
   padding-right: 1.5rem;
 }
 
+.btn {
+  display: inline-block;
+  font-family: var(--ff-primary);
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  color: var(--clr-primary-5);
+}
+
+.btn-show-all {
+  font-size: 1rem;
+  background: var(--clr-grey-1);
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: var(--clr-primary-9);
+}
+
+.btn-show-all:hover > i {
+  transform: translateX(2px);
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
