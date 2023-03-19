@@ -168,7 +168,7 @@ html {
   }
   .btn:hover {
     background: var(--clr-white);
-    color: var(--clr-secondary);
+    color: var(--clr-primary-5);
   }
   /* section */
   .section {
@@ -191,8 +191,6 @@ html {
     place-items: center;
   }
 
-
-/* NEW CODE ENDS HERE */
 /*
 =============== 
 Scroll
@@ -216,7 +214,7 @@ nav {
     color: var(--clr-grey-1);
   }
   .fixed-nav .links a:hover {
-    color: var(--clr-secondary);
+    color: var(--clr-primary-5);
   }
   /* .fixed-nav .links-container {
     height: auto !important;
@@ -308,7 +306,7 @@ nav {
   /* hero */
 header {
     min-height: 100vh;
-    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(var(--clr-primary-5), rgba(0, 0, 0, 0.7)),
       url(./hero-bcg.jpeg) center/cover no-repeat;
   }
   .banner {
@@ -338,7 +336,7 @@ header {
     text-transform: uppercase;
   }
   .title span {
-    color: var(--clr-secondary);
+    color: var(--clr-primary-5);
   }
   #about,
   #projects,
@@ -367,7 +365,7 @@ header {
     position: fixed;
     bottom: 3rem;
     right: 3rem;
-    background: var(--clr-secondary);
+    background: var(--clr-primary-5);
     width: 2rem;
     height: 2rem;
     display: grid;
@@ -396,4 +394,65 @@ header {
     }
   }
   
-  
+/* PROJECTS SECTION */
+.projects-grid {
+  text-align: center;
+  padding: 4rem 0 3rem;
+  color: var(--clr-white);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.projects-grid h4, p {
+  font-style: var(--clr-white);
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    width: 70%;
+  }
+}
+
+.project {
+  background: var(--clr-grey-1);
+  padding: 2rem;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.code {
+  color: var(--clr-primary-5);
+  cursor: pointer;
+}
+
+.project i {
+  padding: 1em 0 1em;
+  font-size: 2em;
+}
+
+.project a {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  display: block;
+  transition: var(--transition);
+  font-weight: bold;
+}
+
+.project a:hover {
+  padding-right: 1.5rem;
+}
+
