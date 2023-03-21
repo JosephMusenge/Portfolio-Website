@@ -483,3 +483,16 @@ header {
   transform: translateX(0);
   transition: transform 0.3s ease-out;
 }
+
+/*Contact Section */
+.contact-me {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  align-items: center;
+}
+
+.contact-me i {
+  padding: 0.5em 0 1em;
+  font-size: 2em;
+}
