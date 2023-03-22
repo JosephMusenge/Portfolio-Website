@@ -492,7 +492,17 @@ header {
   align-items: center;
 }
 
-.contact-me i {
-  padding: 0.5em 0 1em;
-  font-size: 2em;
+.contact-me a {
+  font-size: 1.5em;
+  font-family: var(--ff-primary);
+  background: var(--clr-grey-1);
+  border-radius: 20px;
+  padding: 0.5em 2rem;
+  margin-top: 20px;
+  color: var(--clr-white);
+  text-transform: none;
+}
+
+.contact-icon > i {
+  margin-left: 15px;
 }
