@@ -339,7 +339,7 @@ nav {
   .title span {
     color: var(--clr-primary-5);
   }
-  #about,
+  /* #about, */
   /*#projects,*/
   #certifications,
   #contact {
@@ -525,4 +525,28 @@ nav {
   margin-left: 15px;
 }
 
-/**/
+/* About Me Section */
+.about-me {
+  text-align: justify;
+  padding: 0 5rem;
+}
+
+.skills {
+  text-align: center;
+  padding: 2rem 4rem;
+}
+
+.skills i {
+  font-size: 3.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+
+@media (max-width: 30.625em) {
+  .skills i {
+    display: flex;
+    justify-content: center;
+
+  }
+}
