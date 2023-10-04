@@ -57,7 +57,68 @@
     
     <!-- END WELCOME SECTION -->
     
-    <!-- START PROJECTS SECTION -->
+   <!-- START PROJECTS SECTION -->
+
+<section id="projects" class="projects-section">
+  <h2 class="projects-section-header">These are some of my projects</h2>
+
+  <div class="projects-grid">
+    <a
+      href="https://codepen.io/Joseph-Musenge/pen/oNByjPp"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://i.ibb.co/GpLRNYh/20210502-235213.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Tribute Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/Joseph-Musenge/pen/oNByjPp"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://i.ibb.co/yVVmPSP/2021502-235242.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Product Landing Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    <a
+      href="https://codepen.io/Joseph-Musenge/pen/xxgBjdm"
+      target="_blank"
+      class="project project-tile"
+    >
+      <img
+        class="project-image"
+        src="https://i.ibb.co/1X4JqK3/20210502-235307.png"
+        alt="project"
+      />
+      <p class="project-title">
+        <span class="code">&lt;</span>
+        Technical Documentation Page
+        <span class="code">&#47;&gt;</span>
+      </p>
+    </a>
+    
+      
+  <a         href="https://codepen.io/Joseph-Musenge/"
+    class="btn btn-show-all"
+    target="_blank"
+    >Show all<i class="fas fa-chevron-right"></i
+  ></a>
+</section>
     
     <!-- END PROJECTS SECTION -->
     

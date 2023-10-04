@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Joseph Musenge</title>
+        <title>Joseph Musenge's Website</title>
         <!-- font-awesome -->
         <link
         rel="stylesheet"
@@ -21,7 +21,9 @@
             <div class="nav-center">
             <!-- nav header -->
             <div class="nav-header">
-                <img src="./Resources/logo.svg" alt="logo" class="logo">
+                <!-- <img src="./Resources/logo.svg" alt="logo" class="logo"> -->
+                <!-- Add my first name as brand logo -->
+                <a href="#" class="brand-logo">Joseph <span>Musenge</span></a>
                 <button class="nav-toggle">
                 <i class="fas fa-bars"></i>
                 </button>
@@ -49,10 +51,11 @@
         <!-- end nav -->
         <!-- banner -->
         <div class="banner">
+            <!-- Add my photo -->
             <div class="container">
-            <p>Hello there, my name is </p>
-            <h1>Joseph Musenge</h1>
-            <a href="#tours" class="scroll-link btn btn-white">Download Resume</a>
+                <p>Hello there, my name is </p>
+                <h1>Joseph Musenge</h1>
+                <a href="#" class="scroll-link btn btn-white">Download Resume</a>
             </div>
         </div>
         </header>
@@ -64,11 +67,12 @@
         <div class="main">
             <div class="about-me">
                 <div class="experience">
-                    <h3>My Experience</h3>
-                    <p>I am a computer science freshman getting into the software development space.
-                        I am interested in full stack developer, data science, and I am eager to share my learning journey.
-                        I am a highly driven and curious individual who is always looking for opportunities that will broaden my realm of experience.
-                        I am doing the #100DaysOfCode challenge and you can have a look at my twitter.
+                    <h3>My Journey So Far</h3>
+                    <p>
+                        I'm a computer science freshman with a passion for exploring the vast world of software development. I'm on an exciting journey of discovery and growth in the tech industry, and I'm thrilled to share a glimpse of it with you.
+                    </p>
+                    <p>
+                        As I embark on this journey, I have a keen interest in several areas of technology, including full-stack development and game development. I'm driven by a desire to understand the intricacies of building robust and innovative software solutions that can make a real impact. Whether it's crafting a user-friendly web application or uncovering insights from data, I thrive on the challenges and opportunities that the software development field presents.
                     </p>
                 </div>
                 <div class="skills">
@@ -84,40 +88,51 @@
         </div>
         </section>
         <!-- projects -->
-        <section id="projects" class="section projects-section">
-        <div class="title">
-            <h2>my <span>projects</span></h2>
-        </div>
-        <div class="projects-grid">
-            <div class="project project-tile">
-                <i class="fa-solid fa-code"></i>
-                <h4>Technical Documentation Page</h4>
-                <p class="description">Developed a technical documentation 
-                    page that describes the foundational knowledge of the C++ programming language.</p>
-                <a href="#" class="code">
-                    <h4>Source Code</h4>
-                </a>
+        <section class="section projects-section" id="projects">
+            <div class="title">
+                <h2>my <span>projects</span></h2>
             </div>
-            <div class="project project-tile">
-                <i class="fa-solid fa-utensils"></i>
-                <h4>Restaurant Menu</h4>
-                <p class="description">Developed this website using HTML and CSS.</p>
-                <a href="#" class="code">
-                    <h4>Source Code</h4>
-                </a>
+            <div class="projects-grid">
+                <div class="project-tile">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h4>International Students Webpage</h4>
+                    <p class="description">Designed and developed a dedicated webpage for international students on the 
+                        Rust College website to enhance their experience and provide essential information to prospect students.</p>
+                    <a href="https://www.rustcollege.edu/international-students/" class="code">
+                        <h4>View Project</h4>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h4>Shopping List App</h4>
+                    <p class="description">Developed a web and mobile application designed to simplify your shopping experience. 
+                        Users can effortlessly create and manage their shopping lists, ensuring a stress-free and organized shopping trip every time.</p>
+                    <a href="https://github.com/JosephMusenge/Shopping-List-Mobile-App" class="code">
+                        <h4>Source Code</h4>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <i class="fa-solid fa-cloud"></i>
+                    <h4>WeatherNow App</h4>
+                    <p class="description">WeatherNow is a user-friendly weather web application designed to provide real-time weather 
+                        forecasts and information. With a sleek and intuitive interface, users can quickly access essential weather data for any location worldwide.</p>
+                    <a href="https://github.com/JosephMusenge/Weather-App" class="code">
+                        <h4>Source Code</h4>
+                    </a>
+                </div>
+                <div class="project-tile">
+                    <i class="fa-solid fa-clock"></i>
+                    <h4>Digital Clock</h4>
+                    <p class="description">The Digital Clock project is a sleek and functional web-based application that provides users with a real-time display of the current time. 
+                        Its minimalist design and accurate timekeeping make it a useful tool for anyone looking to keep track of time with precision.</p>
+                    <a href="https://github.com/JosephMusenge/20-JavaScript-Mini-Projects/tree/main/19%20-%20Digital%20Clock" class="code">
+                        <h4>Source Code</h4>
+                    </a>
+                </div>
+                <!-- <a href="https://codepen.io/Joseph-Musenge/" class="btn btn-show-all" target="_blank"> 
+                    Show all<i class="fas fa-chevron-right"></i>
+                </a> -->
             </div>
-            <div class="project project-tile">
-                <i class="fa-solid fa-clock"></i>
-                <h4>Digital Clock</h4>
-                <p class="description">Developed this website using HTML and CSS.</p>
-                <a href="#" class="code">
-                    <h4>Source Code</h4>
-                </a>
-            </div>
-            <a href="https://codepen.io/Joseph-Musenge/" class="btn btn-show-all" target="_blank"> 
-                Show all<i class="fas fa-chevron-right"></i>
-            </a>
-        </div>
         </section>
         <!-- certifications
         <section id="certifications" class="section">
@@ -131,8 +146,12 @@
                 <h2>contact <span>me</span></h2>
             </div>
             <div class="contact-me">
-                <h3>Let's work together! Get in touch.</h3>
-                <p>If you would like to work with me or have an opportunity in mind, let's get in touch.</p>
+                <h3>Let's Connect!</h3>
+                <p>I'm eager to connect with like-minded individuals, fellow developers, and potential collaborators. If you have a project idea, want to discuss tech trends, or simply want to chat about code, feel free to contact me. Together, we can create something remarkable.
+
+                    Thank you for visiting my portfolio, and I look forward to sharing more of my experiences and creations with you.
+                    
+                    </p>
                 <div class="contact-icon">
                     <a href="mailto:josephmusengep62@gmail.com" target="_blank">
                         Contact Me<i class="fa-solid fa-envelope"></i>
