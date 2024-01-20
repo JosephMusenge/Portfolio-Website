@@ -1,193 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Joseph Musenge's Website</title>
-        <!-- font-awesome -->
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        />
-        <script src="https://kit.fontawesome.com/fc0d85c0f8.js" crossorigin="anonymous"></script>
-        <!-- styles -->
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <!-- header -->
-        <header id="home">
-        <!-- nav -->
-        <nav id="nav">
-            <div class="nav-center">
-            <!-- nav header -->
-            <div class="nav-header">
-                <!-- <img src="./Resources/logo.svg" alt="logo" class="logo"> -->
-                <!-- Add my first name as brand logo -->
-                <a href="#" class="brand-logo">Joseph <span>Musenge</span></a>
-                <button type="button" class="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-            <!-- links -->
-            <div class="links-container">
-                <ul class="links">
-                <li>
-                    <a href="#home" class="scroll-link">home</a>
-                </li>
-                <li>
-                    <a href="#about" class="scroll-link">about</a>
-                </li>
-                <li>
-                    <a href="#projects" class="scroll-link">projects</a>
-                </li>
-                <li>
-                    <a href="#contact" class="scroll-link">contact</a>
-                </li>
-                </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- <a href="#" class="brand-logo">Joseph <span>Musenge</span></a> -->
+            <img src="img/musenge logo.png" alt="">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills & Technologies</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction Section -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Joseph Musenge</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">CS Student</p>
+        <img src="resources/Headshot.jpeg" alt="a picture of Joseph Musenge smiling" class="intro__img">
+    </section>
+
+    
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">About Me</h2>
+        <p class="section__subtitle section__subtitle--about"></p>
+
+        <div class="about-me__body">
+            <p>
+                I'm a sophomore at Rust College majoring in Computer Science and Math with a passion for exploring the vast world of 
+                software development. I'm on an exciting journey of discovery and growth in the tech industry, 
+                and I'm thrilled to share a glimpse of it with you.
+            </p>
+            <p>
+                As I embark on this journey, I have a keen interest in several areas of technology, including full-stack development 
+                and game development. I'm driven by a desire to understand the intricacies of building robust and innovative 
+                software solutions that can make a real impact. Whether it's crafting a user-friendly web application or uncovering 
+                insights from data, I thrive on the challenges and opportunities that the software development field presents.
+            </p>
+        </div>
+
+        <img src="resources/IMG_0643.jpeg" alt="Joseph standing against a wall" class="about-me__img">
+    </section>
+
+    <!-- Skills & Technologies -->
+    <section class="my-skills" id="skills">
+        <h2 class="section__title section__title--skills">Skills & Technologies</h2>
+        <div class="experience-details-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <h2 class="experience-sub-title">Frontend Development</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="resources/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>HTML</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="resources/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>CSS</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="resources/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>JavaScript</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="resources/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>React.js</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                    
+                </div>
+              </div>
+              <div class="details-container">
+                <h2 class="experience-sub-title">Other Skills</h2>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="resources/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Python</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="resources/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Git</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="resources/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>WordPress</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                  <article>
+                    <img
+                      src="resources/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Tailwind</h3>
+                      <p>Basic</p>
+                    </div>
+                  </article>
+                  
+                </div>
+              </div>
             </div>
             
-            </div>
-        </nav>
-        <!-- end nav -->
-        <!-- banner -->
-        <div class="banner">
-            <!-- Add my photo -->
-            <div class="container">
-                <p>Hello there, my name is </p>
-                <h1>Joseph Musenge</h1>
-                <a href="https://drive.google.com/file/d/1qSYzhWEcouY_11ojjd14EdlK7SabzKWw/view?usp=drive_link" download="Joseph_Musenge_Resume.pdf" class="scroll-link btn btn-white">Download Resume</a>
-            </div>
         </div>
-        </header>
-        <!-- about -->
-        <section id="about" class="section">
-        <div class="title">
-            <h2>about <span>me</span></h2>
-        </div>
-        <div class="main">
-            <div class="about-me">
-                <div class="experience">
-                    <h3>My Journey So Far</h3>
-                    <p>
-                        I'm a computer science freshman with a passion for exploring the vast world of software development. I'm on an exciting journey of discovery and growth in the tech industry, and I'm thrilled to share a glimpse of it with you.
-                    </p>
-                    <p>
-                        As I embark on this journey, I have a keen interest in several areas of technology, including full-stack development and game development. I'm driven by a desire to understand the intricacies of building robust and innovative software solutions that can make a real impact. Whether it's crafting a user-friendly web application or uncovering insights from data, I thrive on the challenges and opportunities that the software development field presents.
-                    </p>
-                </div>
-                <div class="skills">
-                    <h3>Skills</h3>
-                    <i class="fa-brands fa-square-js"></i>
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <i class="fa-brands fa-python"></i>
-                    <i class="fa-brands fa-r-project"></i>
-                    <i class="fa-brands fa-git-alt"></i>
-                </div>
-            </div>
-        </div>
-        </section>
-        <!-- projects -->
-        <section class="section projects-section" id="projects">
-            <div class="title">
-                <h2>my <span>projects</span></h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-tile">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h4>International Students Webpage</h4>
-                    <p class="description">Designed and developed a dedicated webpage for international students on the 
-                        Rust College website to enhance their experience and provide essential information to prospect students.</p>
-                    <a href="https://www.rustcollege.edu/international-students/" class="code">
-                        <h4>View Project</h4>
-                    </a>
-                </div>
-                <div class="project-tile">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <h4>Shopping List App</h4>
-                    <p class="description">Developed a web and mobile application designed to simplify your shopping experience. 
-                        Users can effortlessly create and manage their shopping lists, ensuring a stress-free and organized shopping trip every time.</p>
-                    <a href="https://github.com/JosephMusenge/Shopping-List-Mobile-App" class="code">
-                        <h4>Source Code</h4>
-                    </a>
-                </div>
-                <div class="project-tile">
-                    <i class="fa-solid fa-cloud"></i>
-                    <h4>WeatherNow App</h4>
-                    <p class="description">WeatherNow is a user-friendly weather web application designed to provide real-time weather 
-                        forecasts and information. With a sleek and intuitive interface, users can quickly access essential weather data for any location worldwide.</p>
-                    <a href="https://github.com/JosephMusenge/Weather-App" class="code">
-                        <h4>Source Code</h4>
-                    </a>
-                </div>
-                <div class="project-tile">
-                    <i class="fa-solid fa-clock"></i>
-                    <h4>Digital Clock</h4>
-                    <p class="description">The Digital Clock project is a sleek and functional web-based application that provides users with a real-time display of the current time. 
-                        Its minimalist design and accurate timekeeping make it a useful tool for anyone looking to keep track of time with precision.</p>
-                    <a href="https://github.com/JosephMusenge/20-JavaScript-Mini-Projects/tree/main/19%20-%20Digital%20Clock" class="code">
-                        <h4>Source Code</h4>
-                    </a>
-                </div>
-                <!-- <a href="https://codepen.io/Joseph-Musenge/" class="btn btn-show-all" target="_blank"> 
-                    Show all<i class="fas fa-chevron-right"></i>
-                </a> -->
-            </div>
-        </section>
-        <!-- certifications
-        <section id="certifications" class="section">
-        <div class="title">
-            <h2><span>certifications</span></h2>
-        </div>
-        </section> -->
-        <!-- contact -->
-        <section id="contact" class="section">
-            <div class="title">
-                <h2>contact <span>me</span></h2>
-            </div>
-            <div class="contact-me">
-                <h3>Let's Connect!</h3>
-                <p>I'm eager to connect with like-minded individuals, fellow developers, and potential collaborators. If you have a project idea, want to discuss tech trends, or simply want to chat about code, feel free to contact me. Together, we can create something remarkable.
 
-                    Thank you for visiting my portfolio, and I look forward to sharing more of my experiences and creations with you.
-                    
-                    </p>
-                <div class="contact-icon">
-                    <a href="mailto:josephmusengep62@gmail.com" target="_blank">
-                        Contact Me<i class="fa-solid fa-envelope"></i>
-                    </a>
+        <a href="#projects" class="btn">My Projects</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="my-work" id="projects">
+        <h2 class="section__title">My Projects</h2>
+        <p class="section__subtitle">Here are some of the projects I've worked on.</p>
+
+        <div class="portfolios">
+            <div class="portfolio__item">
+                <div class="image">
+                    <img src="resources/currency-converter-project.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Project Source</h3>
+                    <div class="icons">
+                        <a href="https://github.com/JosephMusenge/Currency-Converter" target="_blank" class="icon" rel="noopener" title="Currency Converter Project">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- footer -->
-        <footer class="section">
-        <div class="social-links">
-            <a href="https://github.com/JosephMusenge" target="_blank" rel="noopener" class="btn-socials">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://linkedin.com/in/joseph-musenge" target="_blank" rel="noopener" class="btn-socials">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="https://twitter.com/_josephmusenge" target="_blank" rel="noopener" class="btn-socials">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="https://discordapp.com/users/2839" target="_blank" rel="noopener" class="btn-socials">
-                <i class="fa-brands fa-discord"></i>
-            </a>
+            <div class="portfolio__item">
+                <div class="image">
+                    <img src="resources/weather-app-project.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Project Source</h3>
+                    <div class="icons">
+                        <a href="https://github.com/JosephMusenge/Weather-App" target="_blank" class="icon" rel="noopener" title="Weather App Project">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__item">
+                <div class="image">
+                    <img src="resources/digital-clock-project.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Project Source</h3>
+                    <div class="icons">
+                        <a href="https://github.com/JosephMusenge/20-JavaScript-Mini-Projects/tree/main/19%20-%20Digital%20Clock" target="_blank" rel="noopener" class="icon" title="Digital Clock Project">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__item">
+                <div class="image">
+                    <img src="resources/grocery-list-project.png" alt="">
+                </div>
+                <div class="hover-items">
+                    <h3>Project Source</h3>
+                    <div class="icons">
+                        <a href="https://github.com/JosephMusenge/Grocery-List-App" target="_blank" class="icon" rel="noopener" title="GitHub Repository - Grocery List App">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Contact Me -->
+    <section class="contact__me" id="contact">
+        <h2 class="title">Contact Me</h2>
+        <p class="section__text__p1">Let's connect. Get in Touch</p>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="resources/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:josephmusengep62@gmail.com" class="footer__link">josephmusengep62@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="resources/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com" class="footer__link">LinkedIn</a></p>
+          </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <!-- <h2 class="section__title">Contact Me</h2>
+        <p class="section__subtitle">Get in Touch</p> -->
+        <!-- <a href="mailto:josephmusengep62@gmail.com" class="footer__link">josephmusengep62@gmail.com</a> -->
+        <ul class="social-list">
+            <li class="social--list__item">
+                <a href="https://www.linkedin.com/in/joseph-musenge" class="social-list__link" title="LinkedIn Profile">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social--list__item">
+                <a href="https://www.twitter.com/_josephmusenge" class="social-list__link" title="Twitter Profile">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social--list__item">
+                <a href="https://www.instagram.com/_josephmusenge" class="social-list__link" title="Instagram Profile">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social--list__item">
+                <a href="https://www.github.com/JosephMusenge" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
         <p>
             &copy; 
             <span id="date">
             2022
             </span>
-            Joseph Musenge | all rights reversed
+            Joseph Musenge 
         </p>
-        </footer>
-        <!-- back to top button -->
-        <a href="#home" class="scroll-link top-link">
-        <i class="fas fa-arrow-up"></i>
-        </a>
-        <!-- javascript -->
-        <script src="app.js"></script>
-    </body>
+    </footer>
+
+    <!-- custom js file -->
+    <script src="js/main.js"></script>
+</body>
 </html>
